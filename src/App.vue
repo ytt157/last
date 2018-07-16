@@ -1,15 +1,25 @@
 <template>
   <div id="app">
-   <h2>武汉理工大学信息管理与信息系统</h2>
-   <h2>杨婷婷 1602班</h2>
+   <h2 v-html="title"></h2>
+   <h2 v-text="msg"></h2>
   </div>
 
 </template>
 
 <script>
 export default {
-  name: 'App'
-  
+data(){
+  return{
+    title:'武汉理工大学信息管理与信息系统',
+    msg:'杨婷婷 1602班'
+  }
+  },
+  methods(){
+
+  },
+  watch(){
+
+  }
 }
 </script>
 
